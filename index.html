@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency First-Aid Guide</title>
+    <!-- Use Tailwind CSS for rapid styling and responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link to our custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="max-w-xl mx-auto py-8">
+        <!-- Main Application Title -->
+        <h1 class="text-3xl font-bold mb-6 text-center text-red-600">First-Aid Guide</h1>
+
+        <!-- List View -->
+        <div id="list-view" class="bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-xl font-semibold mb-4 text-center">Select an Injury</h2>
+            <div id="guide-list" class="space-y-4">
+                <!-- Guide list items will be injected here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Detail View -->
+        <div id="detail-view" class="bg-white rounded-xl shadow-lg p-6">
+            <button id="back-button" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                <span class="font-medium">Back</span>
+            </button>
+            <h2 id="guide-title" class="text-2xl font-bold mt-4 mb-2"></h2>
+            <p id="guide-description" class="text-gray-500 mb-6"></p>
+            <ul id="guide-steps" class="space-y-3 list-decimal list-inside text-gray-700">
+                <!-- Step-by-step instructions will be injected here -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- Link to our JavaScript file -->
+    <script src="app.js"></script>
+
+</body>
+</html>
