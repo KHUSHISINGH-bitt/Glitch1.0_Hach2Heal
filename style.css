@@ -1,0 +1,12 @@
+/* Use a mobile-first approach. Start with a body style and expand later. */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb; /* bg-gray-50 */
+    color: #374151;            /* text-gray-800 */
+    padding: 1rem;
+}
+
+/* Hide the detail view by default */
+#detail-view {
+    display: none;
+}
